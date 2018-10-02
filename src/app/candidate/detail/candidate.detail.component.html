@@ -4,18 +4,8 @@
       <div class="resume-titlebar">
         <div class="resumes-list-content">
 
-          <div>
-            <p if="${error != null}" text="${error}" style="color:red"></p>
-          </div>
-
           <h4 text="*{name}"><span>Accountant</span></h4>
 
-          <span class="icons"><i class="fa fa-map-marker"></i></span>
-          <span class="icons" text="*{address.city}"></span>
-          <span class="icons" text="*{address.address}"></span>
-          <span class="icons" text="*{address.state.title}"></span>
-          <spam class="icons" text="*{address.zipCode}"/>
-          <p></p>
           <span class="icons"><i class="fa fa-money"></i>$</span>
           <span class="icons" text="*{hourlyRate}"/>
           <span>/ hour</span>
@@ -41,12 +31,6 @@
         </div>
       </div>
     </div>
-
-    <div class="two-buttons">
-      <a href="#small-dialog" class="popup-with-zoom-anim button"><i class="fa fa-envelope"></i>Download resume</a>
-    </div>
-
-
   </div>
 
 
@@ -97,30 +81,6 @@
         </button>
       </div>
 
-
-      <div if="*{!approved}">
-        <p style="color:red">Your account is not approved yet. You will receive a message as
-          soon as it
-          gets approved.
-          For now just refresh this page and you will get approved.</p>
-      </div>
     </div>
-
-    <div if="${#authentication != null and #authorization.expression('hasRole(''ROLE_ADMIN'')')}">
-      <a href="@{/admin/edit-candidate-account/__${candidate.id}__}" id="edit-admin" name="edit-admin" class="button big margin-top-5">
-        Edit<i class="fa fa-arrow-circle-right"></i>
-      </a>
-      <div if="*{!approved}">
-        <a href="@{/admin/approve_user/__${candidate.id}__}" id="approve-admin" name="approve-admin" class="button big margin-top-5">
-          Approve
-        </a>
-      </div>
-      <div if="*{approved}">
-        <a href="@{/admin/conversations/candidate/__${candidate.id}__}" id="conversations-admin" name="approve-admin" class="button big margin-top-5">
-          Show conversations<i class="fa fa-arrow-circle-right"></i>
-        </a>
-      </div>
-    </div>
-
   </div>
 </div>

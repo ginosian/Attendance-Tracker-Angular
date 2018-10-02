@@ -1,7 +1,6 @@
 export class CandidateModel {
 
   public birthDate: Date;
-  public startingDate: Date;
   public timePeriod: string;
   public hourlyRate: number;
   public skills: string[];
@@ -11,7 +10,6 @@ export class CandidateModel {
 
   constructor(
     birthDate: Date,
-    startingDate: Date,
     timePeriod: string,
     hourlyRate: number,
     skills: string[],
@@ -19,7 +17,6 @@ export class CandidateModel {
     areas: string[]) {
 
     this.birthDate = birthDate;
-    this.startingDate = startingDate;
     this.timePeriod = timePeriod;
     this.hourlyRate = hourlyRate;
     this.skills = skills;
