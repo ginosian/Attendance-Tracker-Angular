@@ -25,7 +25,22 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/style-guide/static/scripts/jquery-2.1.3.min.js",
+              "src/style-guide/static/scripts/custom.js",
+              "src/style-guide/static/scripts/jquery.superfish.js",
+              "src/style-guide/static/scripts/jquery.themepunch.tools.min.js",
+              "src/style-guide/static/scripts/jquery.themepunch.revolution.min.js",
+              "src/style-guide/static/scripts/jquery.themepunch.showbizpro.min.js",
+              "src/style-guide/static/scripts/jquery.flexslider-min.js",
+              "src/style-guide/static/scripts/chosen.jquery.min.js",
+              "src/style-guide/static/scripts/jquery.magnific-popup.min.js",
+              "src/style-guide/static/scripts/waypoints.min.js",
+              "src/style-guide/static/scripts/jquery.counterup.min.js",
+              "src/style-guide/static/scripts/jquery.jpanelmenu.js",
+              "src/style-guide/static/scripts/stacktable.js",
+              "src/style-guide/static/scripts/headroom.min.js"
+            ]
           },
           "configurations": {
             "production": {
