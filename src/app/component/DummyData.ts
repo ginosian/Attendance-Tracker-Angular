@@ -55,4 +55,10 @@ export class DummyData {
       .set('Add Note', '#two-1')
       .set('Show Details', '#three-1');
   }
+
+  static dummyInfoButton1(): Map<string, string> {
+    return new Map<string, string>()
+      .set('Download CV', '#')
+      .set('Contact', '#');
+  }
 }

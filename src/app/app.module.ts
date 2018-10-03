@@ -10,6 +10,7 @@ import {CandidateItemsComponent} from './component/user/list/items/candidate-ite
 import {CandidateItemComponent} from './component/user/list/item/candidate-item.component.ts';
 import {FilterComponent} from './common/filter/filter.component';
 import {ManageButtonComponent} from './common/button/manage/manage.button.component';
+import {InfoButtonComponent} from './common/button/info/info.button.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,8 @@ import {ManageButtonComponent} from './common/button/manage/manage.button.compon
     CandidateItemsComponent,
     CandidateItemComponent,
     FilterComponent,
-    ManageButtonComponent
-
+    ManageButtonComponent,
+    InfoButtonComponent
   ],
   imports: [
     BrowserModule
