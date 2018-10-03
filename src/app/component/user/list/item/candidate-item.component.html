@@ -2,12 +2,20 @@
 
   <!-- Name / Avatar -->
   <div class="info">
-    <img src="https://png2.kisspng.com/20180612/tox/kisspng-samsung-galaxy-a8-a8-user-login-telephone-avata-pawn-5b20728263c2d1.7486204615288531224086.png" alt=""/>
+    <img
+      src="https://png2.kisspng.com/20180612/tox/kisspng-samsung-galaxy-a8-a8-user-login-telephone-avata-pawn-5b20728263c2d1.7486204615288531224086.png"
+      alt=""/>
     <span>{{candidate.firstName + ' ' + candidate.lastName}}</span>
-    <app-info-button></app-info-button>
+    <ul>
+      <li>
+        <app-icon-button></app-icon-button>
+      </li>
+    </ul>
   </div>
   <!-- Buttons -->
+  <div class="buttons">
   <app-manage-button></app-manage-button>
+  </div>
 
   <div class="clearfix"></div>
   <!--  Hidden Tabs -->
@@ -34,7 +42,7 @@
       </div>
 
 
-      <!-- Later use for this manage button component -->
+      <!-- Later use for this style button component -->
       <div class="clearfix"></div>
       <a href="#" class="button margin-top-15">Save</a>
       <a href="#" class="button gray margin-top-15 delete-application">Delete this application</a>
@@ -42,7 +50,7 @@
     </div>
 
 
-    <!-- Later use for this manage button component -->
+    <!-- Later use for this style button component -->
     <!-- Second Tab -->
     <div class="app-tab-content" id="two-1">
       <textarea placeholder="Private note regarding this application"></textarea>
@@ -68,7 +76,7 @@
 <!-- Footer -->
 <div class="app-footer">
 
-  <div class="rating no-stars">
+  <div class="rating four-stars">
     <div class="star-rating"></div>
     <div class="star-bg"></div>
   </div>

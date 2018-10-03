@@ -9,8 +9,8 @@ import {CandidateComponent} from './component/user/detail/candidate.component';
 import {CandidateItemsComponent} from './component/user/list/items/candidate-items.component';
 import {CandidateItemComponent} from './component/user/list/item/candidate-item.component.ts';
 import {FilterComponent} from './common/filter/filter.component';
-import {ManageButtonComponent} from './common/button/manage/manage.button.component';
-import {InfoButtonComponent} from './common/button/info/info.button.component';
+import {ButtonStyleIconComponent} from './common/button/icon/style/button.style.icon.component';
+import {ButtonIconComponent} from './common/button/icon/button.icon.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import {InfoButtonComponent} from './common/button/info/info.button.component';
     CandidateItemsComponent,
     CandidateItemComponent,
     FilterComponent,
-    ManageButtonComponent,
-    InfoButtonComponent
+    ButtonStyleIconComponent,
+    ButtonIconComponent
   ],
   imports: [
     BrowserModule
