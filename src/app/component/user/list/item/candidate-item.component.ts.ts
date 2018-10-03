@@ -1,9 +1,10 @@
-import {Component} from "@angular/core";
+import {Component, Input} from '@angular/core';
+import {Candidate} from '../../../model/candidate';
 
 @Component({
-  selector: 'candidate-item',
+  selector: 'app-candidate-item',
   templateUrl: 'candidate-item.component.html'
 })
 export class CandidateItemComponent {
-
+  @Input() candidate: Candidate;
 }

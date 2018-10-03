@@ -29,4 +29,30 @@ export class DummyData {
         new Division('Yerevan branch'))
     ];
   }
+
+  static dummyFilters(): string[] {
+    return [
+      'Filter by status',
+      'New',
+      'Interviewed',
+      'Offer extended',
+      'Hired',
+      'Archived'
+    ];
+  }
+
+  static dummySortOptions(): string[] {
+    return [
+      'Newest first',
+      'Sort by name',
+      'Sort by rating'
+    ];
+  }
+
+  static dummyManageButton1(): Map<string, string> {
+    return new Map<string, string>()
+      .set('Edit', '#one-1')
+      .set('Add Note', '#two-1')
+      .set('Show Details', '#three-1');
+  }
 }

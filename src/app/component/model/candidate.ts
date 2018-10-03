@@ -4,8 +4,8 @@ import {Role} from './role';
 import {Division} from './division';
 
 export class Candidate {
-  public firstName: String;
-  public lastName: String;
+  public firstName: string;
+  public lastName: string;
   public joiningDate: Date;
   public leavingDate: Date;
   public userDetail: Account;
@@ -14,7 +14,7 @@ export class Candidate {
   public division: Division;
 
 
-  constructor(firstName: String, lastName: String, joiningDate: Date, leavingDate: Date, userDetail: Account, contact: Contact, roles: Role[], division: Division) {
+  constructor(firstName: string, lastName: string, joiningDate: Date, leavingDate: Date, userDetail: Account, contact: Contact, roles: Role[], division: Division) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.joiningDate = joiningDate;

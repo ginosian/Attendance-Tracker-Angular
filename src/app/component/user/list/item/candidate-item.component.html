@@ -1,3 +1,87 @@
-<p>
-  item works!
-</p>
+<div class="app-content">
+
+  <!-- Name / Avatar -->
+  <div class="info">
+    <img src="https://png2.kisspng.com/20180612/tox/kisspng-samsung-galaxy-a8-a8-user-login-telephone-avata-pawn-5b20728263c2d1.7486204615288531224086.png" alt=""/>
+    <span>{{candidate.firstName + ' ' + candidate.lastName}}</span>
+
+    <!-- Later use for this manage button component -->
+    <ul>
+      <li><a href="#"><i class="fa fa-file-text"></i> Download CV</a></li>
+      <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+  <!-- Buttons -->
+  <app-manage-button></app-manage-button>
+
+  <div class="clearfix"></div>
+  <!--  Hidden Tabs -->
+  <div class="app-tabs">
+
+    <a href="#" class="close-tab button gray"><i class="fa fa-close"></i></a>
+
+    <!-- First Tab -->
+    <div class="app-tab-content" id="one-1">
+
+      <div class="select-grid">
+        <select data-placeholder="Application Status" class="chosen-select-no-single">
+          <option value="">Application Status</option>
+          <option value="new">New</option>
+          <option value="interviewed">Interviewed</option>
+          <option value="offer">Offer extended</option>
+          <option value="hired">Hired</option>
+          <option value="archived">Archived</option>
+        </select>
+      </div>
+
+      <div class="select-grid">
+        <input type="number" min="1" max="5" placeholder="Rating (out of 5)"/>
+      </div>
+
+
+      <!-- Later use for this manage button component -->
+      <div class="clearfix"></div>
+      <a href="#" class="button margin-top-15">Save</a>
+      <a href="#" class="button gray margin-top-15 delete-application">Delete this application</a>
+
+    </div>
+
+
+    <!-- Later use for this manage button component -->
+    <!-- Second Tab -->
+    <div class="app-tab-content" id="two-1">
+      <textarea placeholder="Private note regarding this application"></textarea>
+      <a href="#" class="button margin-top-15">Add Note</a>
+    </div>
+
+    <!-- Third Tab -->
+    <div class="app-tab-content" id="three-1">
+      <i>Full Name:</i>
+      <span>{{candidate.firstName + ' ' + candidate.lastName}}</span>
+
+      <i>Email:</i>
+      <span><a href="mailto:john.doe@example.com">{{candidate.contact.email}}</a></span>
+
+      <i>Message:</i>
+      <span>Praesent efficitur dui eget condimentum viverra. Sed non maximus ipsum, non consequat nulla. Vivamus nec convallis nisi, sit amet egestas magna. Quisque vulputate lorem sit amet ornare efficitur. Duis aliquam est elit, sed tincidunt enim commodo sed. Fusce tempus magna id sagittis laoreet. Proin porta luctus ante eu ultrices. Sed porta consectetur purus, rutrum tincidunt magna dictum tempus. </span>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="app-footer">
+
+  <div class="rating no-stars">
+    <div class="star-rating"></div>
+    <div class="star-bg"></div>
+  </div>
+
+  <ul>
+    <li><i class="fa fa-file-text-o"></i> New</li>
+    <li><i class="fa fa-calendar"></i> September 24, 2015</li>
+  </ul>
+  <div class="clearfix"></div>
+
+</div>

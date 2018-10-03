@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="eight columns">
+    <!-- Select -->
+    <select>
+      <option value="0">--Select Filter--</option>
+      <option *ngFor="let filter of filters" [value]="filter">{{filter}}</option>
+    </select>
+    <div class="margin-bottom-15"></div>
+  </div>
+
+  <div class="eight columns">
+    <!-- Select -->
+
+    <select>
+      <option value="0">--Select Sort Option--</option>
+      <option *ngFor="let sortOption of sortOptions" [value]="sortOption">{{sortOption}}</option>
+    </select>
+    <div class="margin-bottom-35"></div>
+  </div>
+</div>
