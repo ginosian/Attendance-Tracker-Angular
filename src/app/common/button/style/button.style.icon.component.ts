@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {DummyData} from '../../../../component/DummyData';
+import {DummyData} from '../../../component/DummyData';
 
 @Component({
   selector: 'app-manage-button',
