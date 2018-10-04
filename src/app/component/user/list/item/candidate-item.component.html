@@ -8,13 +8,13 @@
     <span>{{candidate.firstName + ' ' + candidate.lastName}}</span>
     <ul>
       <li>
-        <app-icon-button></app-icon-button>
+        <app-buttons [buttons]="infoButtons"></app-buttons>
       </li>
     </ul>
   </div>
   <!-- Buttons -->
   <div class="buttons">
-  <app-manage-button></app-manage-button>
+    <app-buttons [buttons]="manageButtons"></app-buttons>
   </div>
 </div>
 
@@ -55,7 +55,7 @@
     </div>
 
 
-    <!-- Later use for this style button component -->
+    <!-- Later use for this button button component -->
     <div class="clearfix"></div>
     <a href="#" class="button margin-top-15">Save</a>
     <a href="#" class="button gray margin-top-15 delete-application">Delete this application</a>
@@ -63,7 +63,7 @@
   </div>
 
 
-  <!-- Later use for this style button component -->
+  <!-- Later use for this button button component -->
   <!-- Second Tab -->
   <div class="app-tab-content" id="two-1">
     <textarea placeholder="Private note regarding this application"></textarea>

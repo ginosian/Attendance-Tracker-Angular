@@ -369,7 +369,7 @@
             $(this).find('div').addClass('ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom');
             $(this).find("div").hide().first().show();
             $(this).find("h3").first().removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-accordion-header-active ui-state-active ui-corner-top');
-            $(this).find("span").first().addClass('ui-accordion-icon-active');
+            $(this).find("span").first().addClass('ui-accordion-buttons-active');
         });
 
         var $trigger = $accor.find('h3');
@@ -380,8 +380,8 @@
             if( $(this).next().is(':hidden') ) {
                 var $triggerloc = $('h3',location);
                 $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
-                $triggerloc.find('span').removeClass('ui-accordion-icon-active');
-                $(this).find('span').addClass('ui-accordion-icon-active');
+                $triggerloc.find('span').removeClass('ui-accordion-buttons-active');
+                $(this).find('span').addClass('ui-accordion-buttons-active');
                 $(this).addClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideDown(300);
             }
              e.preventDefault();
@@ -645,4 +645,3 @@
 
 })(this.jQuery);
 
-  
