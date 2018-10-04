@@ -74,7 +74,7 @@ header.full-width .container .sixteen.columns {
 header.full-width #navigation ul.float-right { right: 35px; }
 
 
-/* Alternative Header & Menu style*/
+/* Alternative Header & Menu button*/
 .alternative #navigation {
 	width: 100%;
 	border-top: 1px solid #e0e0e0;
@@ -1892,10 +1892,10 @@ img.mfp-img {
 	cursor: pointer;
 }
 
-/*.notification.success .close {background: url(~src/style-guide/static/images/alert_boxes_close_ico.png) 0 -8px no-repeat;}*/
-/*.notification.error .close {background: url(~src/style-guide/static/images/alert_boxes_close_ico.png) 0 0 no-repeat;}*/
-/*.notification.warning .close {background: url(~src/style-guide/static/images/alert_boxes_close_ico.png) 0 -16px no-repeat;}*/
-/*.notification.notice .close {background: url(~src/style-guide/static/images/alert_boxes_close_ico.png) 0 -24px no-repeat;}*/
+/*.notification.success .close {background: url(~src/button-guide/static/images/alert_boxes_close_ico.png) 0 -8px no-repeat;}*/
+/*.notification.error .close {background: url(~src/button-guide/static/images/alert_boxes_close_ico.png) 0 0 no-repeat;}*/
+/*.notification.warning .close {background: url(~src/button-guide/static/images/alert_boxes_close_ico.png) 0 -16px no-repeat;}*/
+/*.notification.notice .close {background: url(~src/button-guide/static/images/alert_boxes_close_ico.png) 0 -24px no-repeat;}*/
 
 
 .notification.notice p span i { font-weight: 500; }
@@ -3449,7 +3449,7 @@ li .job-spotlight p { line-height: 27px; }
 	padding: 0;
 	max-height: 640px !important;
 	overflow: hidden;
-	/*background-image:url(~src/style-guide/static/images/loader.gif);*/
+	/*background-image:url(~src/button-guide/static/images/loader.gif);*/
 	background-repeat: no-repeat;
 	background-position: 50%;
 	margin-bottom: 42px;
@@ -3627,7 +3627,7 @@ li .job-spotlight p { line-height: 27px; }
 	visibility:hidden;
 }
 
-/*.tp-transparentimg {content:"url(~src/style-guide/static/assets/transparent.png)"}*/
+/*.tp-transparentimg {content:"url(~src/button-guide/static/assets/transparent.png)"}*/
 .tp-3d {-webkit-transform-style: preserve-3d;-webkit-transform-origin: 50% 50%;}
 
 

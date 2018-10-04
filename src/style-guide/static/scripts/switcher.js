@@ -11,102 +11,102 @@ window.console = window.console || (function(){
 jQuery(document).ready(function($) {
 	
 		// Color Changer
-		$("#style-switcher .green" ).click(function(){
+		$("#button-switcher .green" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/green.css" );
 			return false;
 		});
 		
-		$("#style-switcher .blue" ).click(function(){
+		$("#button-switcher .blue" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/blue.css" );
 			return false;
 		});
 		
-		$("#style-switcher .orange" ).click(function(){
+		$("#button-switcher .orange" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/orange.css" );
 			return false;
 		});
 		
-		$("#style-switcher .navy" ).click(function(){
+		$("#button-switcher .navy" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/navy.css" );
 			return false;
 		});
 		
-		$("#style-switcher .yellow" ).click(function(){
+		$("#button-switcher .yellow" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/yellow.css" );
 			return false;
 		});
 		
-		$("#style-switcher .peach" ).click(function(){
+		$("#button-switcher .peach" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/peach.css" );
 			return false;
 		});
 		
-		$("#style-switcher .beige" ).click(function(){
+		$("#button-switcher .beige" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/beige.css" );
 			return false;
 		});
 
-		$("#style-switcher .purple" ).click(function(){
+		$("#button-switcher .purple" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/purple.css" );
 			return false;
 		});
 
-		$("#style-switcher .red" ).click(function(){
+		$("#button-switcher .red" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/red.css" );
 			return false;
 		});
 
-		$("#style-switcher .pink" ).click(function(){
+		$("#button-switcher .pink" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/pink.css" );
 			return false;
 		});
 		
-		$("#style-switcher .celadon" ).click(function(){
+		$("#button-switcher .celadon" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/celadon.css" );
 			return false;
 		});
 		
-		$("#style-switcher .brown" ).click(function(){
+		$("#button-switcher .brown" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/brown.css" );
 			return false;
 		});
 		
-		$("#style-switcher .cherry" ).click(function(){
+		$("#button-switcher .cherry" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/cherry.css" );
 			return false;
 		});
 		
-		$("#style-switcher .gray" ).click(function(){
+		$("#button-switcher .gray" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/gray.css" );
 			return false;
 		});
 		
-		$("#style-switcher .darkcol" ).click(function(){
+		$("#button-switcher .darkcol" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/dark.css" );
 			return false;
 		});
 		
-		$("#style-switcher .cyan" ).click(function(){
+		$("#button-switcher .cyan" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/cyan.css" );
 			return false;
 		});
 		
-		$("#style-switcher .olive" ).click(function(){
+		$("#button-switcher .olive" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/olive.css" );
 			return false;
 		});
 
 
-		$("#style-switcher h2 a").click(function(e){
+		$("#button-switcher h2 a").click(function(e){
 			e.preventDefault();
-			var div = $("#style-switcher");
+			var div = $("#button-switcher");
 			console.log(div.css("left"));
 			if (div.css("left") === "-205px") {
-				$("#style-switcher").animate({
+				$("#button-switcher").animate({
 					left: "0px"
 				}); 
 			} else {
-				$("#style-switcher").animate({
+				$("#button-switcher").animate({
 					left: "-205px"
 				});
 			}
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
 
 
 		//Layout Switcher
-	   $("#layout-style").change(function(e){
+	   $("#layout-button").change(function(e){
 			if( $(this).val() == 1){
 				$("body").addClass("boxed");
 				$("body").removeClass("fullwidth");
@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
 	   
 
 		//Layout Switcher
-	   $("#header-style").change(function(e){
+	   $("#header-button").change(function(e){
 			if( $(this).val() == 1){
 				$("header").removeClass("alternative full-width");
 			} 
@@ -153,7 +153,7 @@ jQuery(document).ready(function($) {
 		});
 		
 		$('.bg li a').click(function() {
-			var current = $('#style-switcher select[id=layout-style]').find('option:selected').val();
+			var current = $('#button-switcher select[id=layout-button]').find('option:selected').val();
 			if(current == '1') {
 				var bg = $(this).css("backgroundImage");
 				$("body").css("backgroundImage",bg);
@@ -163,7 +163,7 @@ jQuery(document).ready(function($) {
 		});
 
 		$('.bgsolid li a').click(function() {
-			var current = $('#style-switcher select[id=layout-style]').find('option:selected').val();
+			var current = $('#button-switcher select[id=layout-button]').find('option:selected').val();
 			if(current == '1') {
 			var bg = $(this).css('backgroundColor');
 			$('body').css('backgroundColor',bg).css('backgroundImage','none')

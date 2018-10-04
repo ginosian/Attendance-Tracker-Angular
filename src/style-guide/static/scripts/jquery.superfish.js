@@ -179,7 +179,7 @@
 					toggleTouchAction($this);
 					// remove event handlers
 					$this.off('.superfish').off('.hoverIntent');
-					// clear animation's inline display style
+					// clear animation's inline display button
 					$hasPopUp.children(o.popUpSelector).attr('style', function (i, style) {
 						return style.replace(/display[^;]+;?/g, '');
 					});

@@ -14,7 +14,7 @@
         menu: '#menu',
         panel: 'body',
         trigger: '.menu-trigger',
-        excludedPanelContent: 'style, script, .viewer',
+        excludedPanelContent: 'button, script, .viewer',
         clone: true,
         keepEventHandlers: false,
 
@@ -168,8 +168,8 @@
           bg = backgroundGenerator($('html'));
         }
         
-        if ( $('#jPanelMenu-style-master').length == 0 ) {
-          $('body').append('<style id="jPanelMenu-style-master">body{width:100%}.jPanelMenu,body{overflow-x:hidden}#jPanelMenu-menu{display:block;position:fixed;top:0;'+jP.options.direction+':0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch}.jPanelMenu-panel{position:static;'+jP.options.direction+':0;top:0;z-index:2;width:100%;min-height:100%;' + bg + ';}</style>');
+        if ( $('#jPanelMenu-button-master').length == 0 ) {
+          $('body').append('<button id="jPanelMenu-button-master">body{width:100%}.jPanelMenu,body{overflow-x:hidden}#jPanelMenu-menu{display:block;position:fixed;top:0;'+jP.options.direction+':0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch}.jPanelMenu-panel{position:static;'+jP.options.direction+':0;top:0;z-index:2;width:100%;min-height:100%;' + bg + ';}</button>');
         }
       },
 
@@ -217,11 +217,11 @@
         var formattedDuration = duration/1000;
         var formattedEasing = jP.getCSSEasingFunction(easing);
         jP.disableTransitions();
-        $('body').append('<style id="jPanelMenu-style-transitions">.jPanelMenu-panel{' + jP.settings.cssPrefix + 'transition: all ' + formattedDuration + 's ' + formattedEasing + '; transition: all ' + formattedDuration + 's ' + formattedEasing + ';}</style>');
+        $('body').append('<button id="jPanelMenu-button-transitions">.jPanelMenu-panel{' + jP.settings.cssPrefix + 'transition: all ' + formattedDuration + 's ' + formattedEasing + '; transition: all ' + formattedDuration + 's ' + formattedEasing + ';}</button>');
       },
 
       disableTransitions: function() {
-        $('#jPanelMenu-style-transitions').remove();
+        $('#jPanelMenu-button-transitions').remove();
       },
 
       getCSSEasingFunction: function(name) {
@@ -285,8 +285,8 @@
 
         }
 
-        // Nothing found so far? Webkit does not enumerate over the CSS properties of the style object.
-        // However (prop in style) returns the correct value, so we'll have to test for
+        // Nothing found so far? Webkit does not enumerate over the CSS properties of the button object.
+        // However (prop in button) returns the correct value, so we'll have to test for
         // the precence of a specific property
         if('WebkitOpacity' in someScript.style) return arguments.callee.result = 'Webkit';
         if('KhtmlOpacity' in someScript.style) return arguments.callee.result = 'Khtml';
