@@ -1,27 +1,23 @@
-import {Account} from './account';
 import {Contact} from './contact';
-import {Role} from './role';
-import {Division} from './division';
+import {ApplicantStatus} from './misc/applicant.status';
+import {Skill} from './skill';
 
 export class Candidate {
   public firstName: string;
   public lastName: string;
-  public joiningDate: Date;
-  public leavingDate: Date;
-  public userDetail: Account;
+  public speciality: string;
   public contact: Contact;
-  public roles: Role[];
-  public division: Division;
+  public applicationStatus: ApplicantStatus;
+  public skills: Skill[];
+  public about: string;
 
-
-  constructor(firstName: string, lastName: string, joiningDate: Date, leavingDate: Date, userDetail: Account, contact: Contact, roles: Role[], division: Division) {
+  constructor(firstName: string, lastName: string, speciality: string, contact: Contact, applicationStatus: ApplicantStatus, skills: Skill[], about: string) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.joiningDate = joiningDate;
-    this.leavingDate = leavingDate;
-    this.userDetail = userDetail;
+    this.speciality = speciality;
     this.contact = contact;
-    this.roles = roles;
-    this.division = division;
+    this.applicationStatus = applicationStatus;
+    this.skills = skills;
+    this.about = about;
   }
 }

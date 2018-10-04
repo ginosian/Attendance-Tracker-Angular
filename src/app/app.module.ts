@@ -28,6 +28,10 @@ import {ButtonItemsComponent} from './common/button/buttons/button.items.compone
   imports: [
     BrowserModule
   ],
+  exports: [
+
+  ],
+  entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
