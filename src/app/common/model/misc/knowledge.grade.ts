@@ -1,5 +1,5 @@
 export enum KnowledgeGrade {
-  NOT_AWARE,
+  NONE,
   SOMEWHAT_FAMILIAR,
   GOOD,
   VERY_GOOD,

@@ -1,5 +1,3 @@
-<!-- Header
-================================================== -->
 <div id="wrapper">
   <header class="sticky-header">
     <div class="container">
@@ -9,26 +7,24 @@
         <nav id="navigation" class="menu">
           <ul id="responsive">
 
-            <li><a href="/">Home</a>
+            <li *ngFor="let item of header">
+              <app-button [button]="item.parent"></app-button>
+              <ul>
+                <li *ngFor="let button of item.children" >
+                  <app-button [button]="button"></app-button>
+                </li>
+              </ul>
             </li>
-
-            <li><a href="/">About</a>
-            </li>
-
-            <li><a href="/">Support</a></li>
           </ul>
 
-
-          <ul class="float-right">
-            <li><a href=""><i class="fa fa-user"></i> Sign Up</a></li>
-            <li><a href=""><i class="fa fa-lock"></i> Log In</a></li>
+          <ul class="responsive float-right">
+            <li><app-auth [auth]="auth"></app-auth></li>
           </ul>
-
         </nav>
 
         <!-- Navigation -->
         <div id="mobile-navigation">
-          <a href="" class="menu-trigger"><i class="fa fa-reorder"></i> Menu</a>
+          <a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> Menu</a>
         </div>
 
       </div>

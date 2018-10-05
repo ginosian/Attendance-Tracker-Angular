@@ -1,14 +1,13 @@
 import {Component} from '@angular/core';
-import {DummyData} from '../../component/DummyData';
+import {DummyData} from '../../common/DummyData';
 
 @Component({
   selector: 'app-filter-component',
   templateUrl: 'filter.component.html'
 })
 export class FilterComponent {
-
-  filters: string [] = [];
-  sortOptions: string [] = [];
+  filters: string [];
+  sortOptions: string [];
 
   constructor() {
     this.filters = DummyData.dummyFilters();

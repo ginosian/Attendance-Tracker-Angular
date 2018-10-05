@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {DummyData} from '../../../component/DummyData';
+import {DummyData} from '../../../common/DummyData';
 import {Button} from '../button.model';
 
 @Component({
