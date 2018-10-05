@@ -1,0 +1,22 @@
+<!-- Content
+================================================== -->
+<div class="container">
+
+  <!-- Table -->
+  <div class="sixteen columns">
+    <p class="margin-bottom-25" style="float: left;">The job applications for <strong><a href="#">Power Systems User
+      Experience Designer</a></strong> are listed below.</p>
+    <strong><a href="#" class="download-csv">Download CSV</a></strong>
+  </div>
+
+  <app-filter-component></app-filter-component>
+
+  <div class="sixteen columns">
+    <div class="application" *ngIf="items.length!==0">
+      <div *ngFor="let candidate of items">
+        <app-candidate-list-item [candidate]="candidate"></app-candidate-list-item>
+      </div>
+    </div>
+  </div>
+
+</div>
