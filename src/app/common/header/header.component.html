@@ -1,33 +1,30 @@
-<div id="wrapper">
-  <header class="sticky-header">
-    <div class="container">
-      <div class="sixteen columns">
+<header class="sticky-header">
+  <div class="container">
+    <div class="sixteen columns">
 
-        <!-- Menu -->
-        <nav id="navigation" class="menu">
-          <ul id="responsive">
+      <!-- Menu -->
+      <nav id="navigation" class="menu">
+        <ul id="responsive">
 
-            <li *ngFor="let item of header">
-              <app-button [button]="item.parent"></app-button>
-              <ul>
-                <li *ngFor="let button of item.children" >
-                  <app-button [button]="button"></app-button>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <li *ngFor="let item of header">
+            <app-button [button]="item.parent"></app-button>
+            <ul>
+              <li *ngFor="let button of item.children">
+                <app-button [button]="button"></app-button>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-          <ul class="responsive float-right">
-            <li><app-auth [auth]="auth"></app-auth></li>
-          </ul>
-        </nav>
+        <app-auth [authButtons]="auth"></app-auth>
+      </nav>
 
-        <!-- Navigation -->
-        <div id="mobile-navigation">
-          <a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> Menu</a>
-        </div>
-
+      <!-- Navigation -->
+      <div id="mobile-navigation">
+        <a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> Menu</a>
       </div>
+
     </div>
-  </header>
-</div>
+  </div>
+</header>
+<div class="clearfix"></div>

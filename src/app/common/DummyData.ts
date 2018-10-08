@@ -52,8 +52,8 @@ export class DummyData {
 
   static dummyManageButton1(): Button[] {
     let manageButton1 = new Button('Edit  ', '#one-1', 'button gray app-link', 'fa fa-pencil');
-    let manageButton2 = new Button('Add Note  ', '#two-1', 'button gray app-link', 'fa fa-sticky-note');
-    let manageButton3 = new Button('Show Details  ', '#three-1', 'button gray app-link', 'fa fa-plus-circle');
+    let manageButton2 = new Button('Show Details  ', '#three-1', 'button gray app-link', 'fa fa-plus-circle');
+    let manageButton3 = new Button('Delete  ', '#two-1', 'button gray app-link', 'fa fa-remove');
     return [manageButton1, manageButton2, manageButton3];
   }
 

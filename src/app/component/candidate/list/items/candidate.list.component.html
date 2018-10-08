@@ -1,7 +1,4 @@
-<!-- Content
-================================================== -->
 <div class="container">
-
   <!-- Table -->
   <div class="sixteen columns">
     <p class="margin-bottom-25" style="float: left;">The job applications for <strong><a href="#">Power Systems User
@@ -12,11 +9,10 @@
   <app-filter-component></app-filter-component>
 
   <div class="sixteen columns">
-    <div class="application" *ngIf="items.length!==0">
-      <div *ngFor="let candidate of items">
-        <app-candidate-list-item [candidate]="candidate"></app-candidate-list-item>
-      </div>
-    </div>
+    <app-candidate-list-item
+      *ngFor="let candidate of items"
+      [candidate]="candidate">
+    </app-candidate-list-item>
   </div>
-
 </div>
+

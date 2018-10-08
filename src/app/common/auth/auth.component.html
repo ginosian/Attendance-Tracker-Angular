@@ -1,5 +1,5 @@
 <ul class="responsive float-right">
-  <app-button></app-button>
-  <li><a href="my-account.html#tab2"><i class="fa fa-user"></i> Sign Up</a></li>
-  <li><a href="my-account.html"><i class="fa fa-lock"></i> Log In</a></li>
+  <li *ngFor="let button of authButtons">
+    <app-button [button]="button"></app-button>
+  </li>
 </ul>
