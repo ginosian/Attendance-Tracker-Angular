@@ -51,42 +51,42 @@ export class DummyData {
   }
 
   static dummyManageButton1(): Button[] {
-    let manageButton1 = new Button('Edit  ', '#one-1', 'button gray app-link', 'fa fa-pencil');
-    let manageButton2 = new Button('Show Details  ', '#three-1', 'button gray app-link', 'fa fa-plus-circle');
-    let manageButton3 = new Button('Delete  ', '#two-1', 'button gray app-link', 'fa fa-remove');
+    let manageButton1 = new Button('Edit  ', '#', 'button gray app-link', 'fa fa-pencil', null);
+    let manageButton2 = new Button('Show Details  ', '#', 'button gray app-link', 'fa fa-plus-circle', null);
+    let manageButton3 = new Button('Delete  ', '#', 'button gray app-link', 'fa fa-remove', null);
     return [manageButton1, manageButton2, manageButton3];
   }
 
   static dummyInfoButton1(): Button[] {
-    let infoButton1 = new Button('Download CV  ', '', '', 'fa fa-file-text');
-    let infoButton2 = new Button('Contact  ', '', '', 'fa fa-envelope');
+    let infoButton1 = new Button('Download CV  ', '#', '', 'fa fa-file-text', null);
+    let infoButton2 = new Button('Contact  ', '#', '', 'fa fa-envelope', null);
     return [infoButton1, infoButton2];
   }
 
   static dummyHeader(): Header[]{
-    let parent1 = new Button('Home', '/', null, null);
-    let child11 = new Button('About', '/', null, null);
-    let child12 = new Button('Policy', '/', null, null);
-    let child13 = new Button('Contacts', '/', null, null);
+    let parent1 = new Button('Home', '#', 'sf-with-ul', null, null);
+    let child11 = new Button('About', '#', null, null, null);
+    let child12 = new Button('Policy', '#', null, null, null);
+    let child13 = new Button('Contacts', '#', null, null, null);
     let header1 = new Header(parent1, [child11, child12, child13]);
 
-    let parent2 = new Button('Candidate Home', '/', null, null);
-    let child21 = new Button('Resume', '/', null, null);
-    let child22 = new Button('Account', '/', null, null);
-    let child23 = new Button('Contacts', '/', null, null);
+    let parent2 = new Button('Candidate Home', "#", 'sf-with-ul', null, 'candidates');
+    let child21 = new Button('Resume', '#', null, null, null);
+    let child22 = new Button('Account', '#', null, null, null);
+    let child23 = new Button('Contacts', '#', null, null, null);
     let header2 = new Header(parent2, [child21, child22, child23]);
 
-    let parent3 = new Button('Company', '/', null, null);
-    let child31 = new Button('Candidates', '/', null, null);
-    let child32 = new Button('Hiring Policy', '/', null, null);
-    let child33 = new Button('Contacts', '/', '', null);
+    let parent3 = new Button('Company', '#', 'sf-with-ul', null, 'company');
+    let child31 = new Button('Candidates', '#', null, null, null);
+    let child32 = new Button('Hiring Policy', '#', null, null, null);
+    let child33 = new Button('Contacts', '#', '', null, null);
     let header3 = new Header(parent3, [child31, child32, child33]);
     return [header1, header2, header3];
   }
 
   static dummyAuthButton1(): Button[] {
-    let manageButton1 = new Button('Sign Up  ', '#', null, 'fa fa-user');
-    let manageButton2 = new Button('Contact  ', '#', null, 'fa fa-lock');
+    let manageButton1 = new Button('Sign Up  ', '#', null, 'fa fa-user', null);
+    let manageButton2 = new Button('Contact  ', '#', null, 'fa fa-lock', null);
     return [manageButton1, manageButton2];
   }
 }

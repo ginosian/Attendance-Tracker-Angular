@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Candidate} from '../../../../common/model/candidate';
 import {Button} from '../../../../app-material/button/button.model';
 import {DummyData} from '../../../../common/DummyData';

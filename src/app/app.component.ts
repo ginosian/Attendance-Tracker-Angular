@@ -9,10 +9,9 @@ import {DummyData} from './common/DummyData';
 export class AppComponent {
   public title = 'at-front-test';
   public header = DummyData.dummyHeader();
-
-  loadedFeature = 'candidates';
+  loadedFeature: string;
 
   onNavigate(feature: string){
-
+    this.loadedFeature = feature;
   }
 }

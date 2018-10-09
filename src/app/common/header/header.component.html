@@ -7,7 +7,7 @@
         <ul id="responsive">
 
           <li *ngFor="let item of header">
-            <app-button [button]="item.parent"></app-button>
+            <app-button (click)="onSelect(item.parent.navigate)" [button]="item.parent"></app-button>
             <ul>
               <li *ngFor="let button of item.children">
                 <app-button [button]="button"></app-button>

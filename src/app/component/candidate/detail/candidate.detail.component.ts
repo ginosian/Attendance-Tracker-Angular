@@ -12,6 +12,6 @@ export class CandidateDetailComponent {
 
   constructor(candidate: Candidate) {
     this.candidate = candidate;
-    this.sendMessageButton = new Button("Send message", "", "popup-with-zoom-anim button", "fa fa-envelope");
+    this.sendMessageButton = new Button("Send message", "", "popup-with-zoom-anim button", "fa fa-envelope", null);
   }
 }
