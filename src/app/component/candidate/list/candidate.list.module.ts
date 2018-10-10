@@ -20,6 +20,6 @@ import {ButtonModule} from '../../../app-material/button/button.module';
   exports: [
     CandidateListComponent,
     CandidateListItemComponent
-  ]
+  ],
 })
 export class CandidateListModule { }

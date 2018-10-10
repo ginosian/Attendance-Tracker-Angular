@@ -3,6 +3,7 @@ import {HeaderComponent} from './header.component';
 import {AuthComponent} from '../auth/auth.component';
 import {ButtonModule} from '../../app-material/button/button.module';
 import {BrowserModule} from '@angular/platform-browser';
+import {AppRoutingModule} from '../../component/routing/app.routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   imports: [
     BrowserModule,
-    ButtonModule
+    ButtonModule,
   ],
   exports: [
     HeaderComponent,

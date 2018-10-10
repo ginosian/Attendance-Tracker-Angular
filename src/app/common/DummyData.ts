@@ -64,19 +64,19 @@ export class DummyData {
   }
 
   static dummyHeader(): Header[]{
-    let parent1 = new Button('Home', '#', 'sf-with-ul', null, null);
+    let parent1 = new Button('Home', '/', 'sf-with-ul', null, null);
     let child11 = new Button('About', '#', null, null, null);
     let child12 = new Button('Policy', '#', null, null, null);
     let child13 = new Button('Contacts', '#', null, null, null);
     let header1 = new Header(parent1, [child11, child12, child13]);
 
-    let parent2 = new Button('Candidate Home', "#", 'sf-with-ul', null, 'candidates');
+    let parent2 = new Button('Candidate Home', "/candidates", 'sf-with-ul', null, 'candidates');
     let child21 = new Button('Resume', '#', null, null, null);
     let child22 = new Button('Account', '#', null, null, null);
     let child23 = new Button('Contacts', '#', null, null, null);
     let header2 = new Header(parent2, [child21, child22, child23]);
 
-    let parent3 = new Button('Company', '#', 'sf-with-ul', null, 'company');
+    let parent3 = new Button('Company', '/company', 'sf-with-ul', null, 'company');
     let child31 = new Button('Candidates', '#', null, null, null);
     let child32 = new Button('Hiring Policy', '#', null, null, null);
     let child33 = new Button('Contacts', '#', '', null, null);

@@ -6,17 +6,10 @@ import {FooterComponent} from './common/footer/footer.component';
 import {HeaderModule} from './common/header/header.module';
 import {CandidateListModule} from './component/candidate/list/candidate.list.module';
 import {CompanyDetailModule} from './component/company/detail/company.detail.module';
-import {RouterModule, Routes} from '@angular/router';
-import {CandidateListComponent} from './component/candidate/list/items/candidate.list.component';
-import {CompanyDetailComponent} from './component/company/detail/company.detail.component';
-import {HomeComponent} from './component/home/home.component';
 import {HomeModule} from './component/home/home.module';
+import {AppRoutingModule} from './component/routing/app.routing.module';
 
-const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'candidates', component: CandidateListComponent},
-  {path: 'company', component: CompanyDetailComponent},
-];
+
 
 @NgModule({
   declarations: [
@@ -29,9 +22,11 @@ const appRoutes: Routes = [
     CandidateListModule,
     CompanyDetailModule,
     HomeModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
-  exports: [],
+  exports: [
+    AppRoutingModule
+  ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
